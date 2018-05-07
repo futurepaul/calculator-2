@@ -1,0 +1,304 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --green: rgba(101, 231, 140, 1);
+  --gray: rgb(226, 226, 226);
+  --pink: pink;
+}
+
+body {
+  margin: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-family: Menlo, Futura, "Fira Sans", X-LocaleSpecific, sans-serif;
+  font-size: 18px;
+}
+
+header {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+hr {
+  height: 3px;
+  background-color: var(--green);
+  border: none;
+}
+
+header h1 {
+  padding: 0px;
+  margin: 0px;
+  white-space: nowrap;
+}
+
+input,
+button {
+  font-size: 1em;
+  padding: 0.5em;
+  font-family: Menlo, Futura, "Fira Sans", X-LocaleSpecific, sans-serif;
+}
+
+input {
+  border: solid 2px black;
+  border-radius: 0;
+  width: 18em;
+}
+
+button {
+  border: none;
+  text-align: center;
+  margin-left: 4px;
+}
+
+.calcRow {
+  margin-top: 0.5em;
+}
+
+button.slider {
+  color: white;
+  background-color: var(--pink);
+  border: solid 2px var(--pink);
+  margin-left: calc(-2.5em + 1px);
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+
+button.x {
+  color: white;
+  background-color: black;
+  border-radius: 0.5em;
+  width: 2em;
+}
+
+.name {
+  display: table-cell;
+  padding: 0.5em;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.save {
+  background-color: var(--pink);
+  color: black;
+  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+
+.copy {
+  text-align: center;
+  background-color: lightblue;
+  color: black;
+  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+
+.answer {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: calc(19em + 4px);
+}
+
+.answer p {
+  background-color: var(--gray);
+  padding: 1em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.more {
+  background-color: var(--gray);
+  border: solid 2px var(--pink);
+  padding: 0.5em;
+  margin-top: 0.5em;
+  width: 18em;
+}
+
+.algorithm {
+  padding: 0.5em;
+  width: 18em;
+  border: 2px solid var(--green);
+  margin-top: -2px;
+}
+
+h3.algorithm {
+  margin: 0.5em 0 0 0;
+  padding: 0.5em;
+  font-size: 1em;
+  font-weight: normal;
+  background-color: var(--green);
+}
+
+.drawer h3 {
+  padding: 0.5em;
+  font-size: 1em;
+  font-weight: normal;
+  display: table-cell;
+  background-color: var(--pink);
+}
+
+.drawer ul {
+  margin: 0;
+  padding: 0.5em;
+  border: solid 2px var(--pink);
+  width: 18em;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer ul li {
+  margin-bottom: 0.5em;
+}
+
+.varb {
+  display: inline-block;
+  background-color: var(--pink);
+  line-height: 2em;
+  padding: 0.25em;
+}
+
+.varb strong {
+  padding: 0.25em;
+  background-color: white;
+}
+
+footer {
+  padding-top: 1em;
+  font-size: 0.75em;
+}
