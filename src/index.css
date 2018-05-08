@@ -135,11 +135,14 @@ table {
 }
 
 body {
-  margin: 0;
-  padding-left: 1em;
-  padding-right: 1em;
   font-family: Menlo, Futura, "Fira Sans", X-LocaleSpecific, sans-serif;
   font-size: 18px;
+}
+
+main {
+  width: 20em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header {
@@ -175,12 +178,14 @@ input {
   border: solid 2px black;
   border-radius: 0;
   width: 18em;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 button {
   border: none;
   text-align: center;
-  margin-left: 4px;
+  margin: 0px;
 }
 
 .calcRow {
@@ -191,16 +196,9 @@ button.slider {
   color: white;
   background-color: var(--pink);
   border: solid 2px var(--pink);
-  margin-left: calc(-2.5em + 1px);
+  margin-left: calc(-2.5em + 2px);
   border-top-left-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
-}
-
-button.x {
-  color: white;
-  background-color: black;
-  border-radius: 0.5em;
-  width: 2em;
 }
 
 .name {
@@ -229,7 +227,6 @@ button.x {
 .answer {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  width: calc(19em + 4px);
 }
 
 .answer p {
@@ -238,6 +235,8 @@ button.x {
 }
 
 .buttons {
+  border: none;
+  margin: none;
   display: flex;
   justify-content: flex-end;
 }
@@ -252,7 +251,6 @@ button.x {
 
 .algorithm {
   padding: 0.5em;
-  width: 18em;
   border: 2px solid var(--green);
   margin-top: -2px;
 }
@@ -265,11 +263,10 @@ h3.algorithm {
   background-color: var(--green);
 }
 
-.drawer h3 {
+h3.drawer {
   padding: 0.5em;
   font-size: 1em;
   font-weight: normal;
-  display: table-cell;
   background-color: var(--pink);
 }
 
@@ -277,7 +274,6 @@ h3.algorithm {
   margin: 0;
   padding: 0.5em;
   border: solid 2px var(--pink);
-  width: 18em;
   display: flex;
   flex-direction: column;
 }
