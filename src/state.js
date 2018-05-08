@@ -29,7 +29,21 @@ export const initialState = {
       name: "super long and inconvenient bagels",
       value: "9.14",
       type: "number"
-    }
+    },
+    { id: 3, name: "more bagels", value: "43", type: "number" },
+    { id: 4, name: "more bagels", value: "43", type: "number" },
+    { id: 5, name: "more bagels", value: "43", type: "number" },
+    { id: 6, name: "more bagels", value: "43", type: "number" },
+    { id: 7, name: "more bagels", value: "43", type: "number" },
+    { id: 8, name: "more bagels", value: "43", type: "number" },
+    { id: 9, name: "more bagels", value: "43", type: "number" },
+    { id: 10, name: "more bagels", value: "43", type: "number" },
+    { id: 11, name: "more bagels", value: "43", type: "number" },
+    { id: 12, name: "more bagels", value: "43", type: "number" },
+    { id: 13, name: "more bagels", value: "43", type: "number" },
+    { id: 14, name: "more bagels", value: "43", type: "number" },
+    { id: 15, name: "more bagels", value: "43", type: "number" },
+    { id: 16, name: "more bagels", value: "43", type: "number" }
   ],
   showVariables: { state: false, id: 0 }
 };
@@ -80,6 +94,13 @@ export const pick = id => {
     state.inputs[whichInput].varb = state.varbs[whichVariable];
     state.inputs[whichInput].computedValue = state.varbs[whichVariable].value;
     state.answer = solve(state.inputs);
+    state.showVariables.state = false;
+  });
+};
+
+export const close = () => {
+  update(state => {
+    state.showVariables.state = false;
   });
 };
 
