@@ -134,8 +134,10 @@ table {
   --pink: pink;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
 body {
-  font-family: Menlo, Futura, "Fira Sans", X-LocaleSpecific, sans-serif;
+  font-family: 'Roboto Mono', Menlo, monospace;
   font-size: 18px;
 }
 
@@ -171,7 +173,7 @@ input,
 button {
   font-size: 1em;
   padding: 0.5em;
-  font-family: Menlo, Futura, "Fira Sans", X-LocaleSpecific, sans-serif;
+  font-family: 'Roboto Mono', Menlo, monospace;
 }
 
 input {
