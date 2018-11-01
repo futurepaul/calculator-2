@@ -31,7 +31,7 @@ const App = () => (
   <Provider>
     <main>
       <header>
-        <h1>Calculator 2</h1>
+        <h1>Calculator 3</h1>
         <hr />
       </header>
       <CalculatorRows />
