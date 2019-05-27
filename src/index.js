@@ -1,8 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import registerServiceWorker from "./registerServiceWorker";
+import App from "./App.svelte";
 
-ReactDOM.render(<App />, document.getElementById("root"));
-registerServiceWorker();
+const app = new App({
+  target: document.body,
+  intro: true,
+  props: {
+    name: "hoo boy"
+  }
+});
+
+export default app;
