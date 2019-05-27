@@ -1,4 +1,5 @@
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -37,5 +38,8 @@ module.exports = {
     filename: "bootstrap.js"
   },
   mode: "development",
-  plugins: [new CopyWebpackPlugin(["index.html"])]
+  plugins: [
+    new CopyWebpackPlugin(["index.html"]),
+    new HtmlWebpackPlugin({ title: "Calculator 2", favicon: "./favicon.ico" })
+  ]
 };
