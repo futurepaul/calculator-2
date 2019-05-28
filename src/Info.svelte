@@ -21,6 +21,7 @@
     background: rgb(101, 231, 140);
     padding: 0.5em;
     margin: 0;
+    margin-top: -1px;
   }
 
   div {

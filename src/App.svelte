@@ -6,10 +6,14 @@
 </script>
 
 <style>
+  @media only screen and (min-width: 40em) {
+    main {
+      display: flex;
+    }
+  }
   main {
     padding-left: 1em;
     padding-right: 1em;
-    display: flex;
   }
 
   main > div {

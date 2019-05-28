@@ -1,5 +1,6 @@
 <script>
   import Calc from "../Calc.svelte";
+  import area from "./ascii/areaofcircle.asciimath";
 
   function genCalculator() {
     let title = "area of a circle";
@@ -15,4 +16,4 @@
   }
 </script>
 
-<Calc algo={genCalculator} />
+<Calc algo={genCalculator} displaySvg={area} />

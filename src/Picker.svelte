@@ -2,6 +2,7 @@
   import Pendulum from "./algos/Pendulum.svelte";
   import AreaOfCircle from "./algos/AreaOfCircle.svelte";
   import DistanceBetweenTwoPoints from "./algos/DistanceBetweenTwoPoints.svelte";
+  import VolumeOfSquarePyramid from "./algos/VolumeOfSquarePyramid.svelte";
 
   export let selected = Pendulum;
 </script>
@@ -39,6 +40,9 @@
   <h3>Pick an equation!</h3>
   <button on:click={() => (selected = Pendulum)}>period of a pendulum</button>
   <button on:click={() => (selected = AreaOfCircle)}>area of a circle</button>
+  <button on:click={() => (selected = VolumeOfSquarePyramid)}>
+    volume of a square pyramid
+  </button>
   <button on:click={() => (selected = DistanceBetweenTwoPoints)}>
     distance between two points
   </button>

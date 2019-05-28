@@ -8,6 +8,7 @@
   h3 {
     font-size: 1em;
     padding: 0.5em;
+    margin-top: -1px;
     font-family: "Roboto Mono", Menlo, monospace;
   }
 
