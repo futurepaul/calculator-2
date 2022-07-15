@@ -28,7 +28,7 @@
     "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
-    "svelte": "^3.3.0",
+    "svelte": "^3.49.0",
     "svelte-loader": "^2.13.3"
   }
 }
